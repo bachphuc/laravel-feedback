@@ -1,0 +1,34 @@
+{
+    "name": "bachphuc/laravel-feedback",
+    "description": "review and comment for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bachphuc",
+            "email": "trieuquangphuc123@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "bachphuc\\LaravelFeedback\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "bachphuc\\LaravelFeedback\\Providers\\PackageServiceProvider"
+            ],
+            "aliases": {
+                "Feedback" : "bachphuc\\LaravelFeedback\\Facades\\FeedbackFacade"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
